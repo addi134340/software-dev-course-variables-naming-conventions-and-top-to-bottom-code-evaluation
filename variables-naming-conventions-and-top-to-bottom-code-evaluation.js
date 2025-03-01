@@ -24,9 +24,14 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let customerName = "Alice";
+let itemQuantity = 5;
+let itemPrice = 20;
+//Improvements
+let totalCost = itemQuantity * itemPrice;
+let discount = 0.1;
+let discountedPrice = totalCost * (1 - discount);
 
-console.log(d);
+let receipt = customerName + " bought " + itemQuantity +   " items at $ " + itemPrice + " each. The total cost, with a discount, is " + discountedPrice;
+
+console.log(receipt);
